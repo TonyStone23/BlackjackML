@@ -17,10 +17,8 @@ strats = {
 df = pd.read_csv(f'C:/Users/apsto/VSC/blackjack_ML/DataFiveK/{strats.get(1)}')
 regression(df)
 
-'''
 avEarn = average(df, 'Round Earnings')
-print(avEarn)
+print(f"average earnings: {avEarn}")
 
 sd = standardDeviation(df, 'Round Earnings')
-print(sd)
-'''
+print(f"Standard deviations: {sd}")
